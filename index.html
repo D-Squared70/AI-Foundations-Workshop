@@ -396,6 +396,10 @@ h2.title em{font-style:normal;color:var(--accent);transition:color .9s;}
 .tseg.past{border-top-color:rgba(var(--accent-rgb),.35);opacity:.45;}
 .breakbig{font-family:var(--display);font-size:170px;font-weight:900;text-transform:uppercase;line-height:.8;}
 
+/* setup checklist */
+.checklist{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:40px;max-width:960px;}
+.ci{display:flex;align-items:center;gap:16px;border:1px solid var(--rule-2);border-radius:8px;padding:20px 22px;background:var(--bg-soft);font-size:21px;}
+.ci .box{width:24px;height:24px;border:2px solid var(--accent);border-radius:4px;flex:none;}
 /* readout */
 .rq3{display:flex;flex-direction:column;margin-top:34px;max-width:920px;}
 .rq3 .q{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:34px 0;border-top:1px solid var(--rule);align-items:baseline;}
@@ -756,9 +760,19 @@ h2.title em{font-style:normal;color:var(--accent);transition:color .9s;}
   </section>
 
   <!-- ============ 10 BUILD 1 ============ -->
-  <section class="slide" data-ch="10" data-id="break1" data-timer="10">
-    <div class="timerhead"><div><div class="breakbig">Break</div></div><div class="clock" data-clock>10:00</div></div>
-    <div class="tline"><div class="tseg" data-min="10" style="flex:10"><div class="tm">10<small>MIN</small></div><div class="tl">Next: Build 1</div></div></div>
+  <section class="slide" data-ch="10" data-id="break1" data-timer="15">
+    <div class="timerhead"><div><div class="breakbig">Break</div></div><div class="clock" data-clock>15:00</div></div>
+    <div class="tline"><div class="tseg" data-min="15" style="flex:15"><div class="tm">15<small>MIN</small></div><div class="tl">Next: setup, then Build 1</div></div></div>
+  </section>
+
+  <section class="slide" data-ch="10" data-id="setup" data-timer="15">
+    <div class="timerhead"><div><div class="kicker">Before we build · 15 minutes</div><h2 class="title">Get <em>set up.</em></h2></div><div class="clock" data-clock>15:00</div></div>
+    <div class="checklist">
+      <div class="ci"><span class="box"></span>Logged in to your AI tool</div>
+      <div class="ci"><span class="box"></span><span data-only-el="desktop">Folder created for your report</span><span data-only-el="browser">Project created for your report</span></div>
+      <div class="ci"><span class="box"></span>Dictation mic works</div>
+      <div class="ci"><span class="box"></span>Files ready: the report you sent + the files behind it</div>
+    </div>
   </section>
 
   <section class="slide" data-ch="10" data-id="build1" data-steps="5">
@@ -775,13 +789,13 @@ h2.title em{font-style:normal;color:var(--accent);transition:color .9s;}
     <div class="buildout"><span class="bt">You leave with</span><span class="bb">A skill that builds your report from the raw files.</span></div>
   </section>
 
-  <section class="slide" data-ch="10" data-id="time1" data-timer="75">
-    <div class="timerhead"><div><div class="kicker">Build 1 · 75 minutes</div><h2 class="title sm">Automate a <em>recurring report</em></h2></div><div class="clock" data-clock>75:00</div></div>
+  <section class="slide" data-ch="10" data-id="time1" data-timer="80">
+    <div class="timerhead"><div><div class="kicker">Build 1 · 80 minutes</div><h2 class="title sm">Automate a <em>recurring report</em></h2></div><div class="clock" data-clock>80:00</div></div>
     <div class="tline">
       <div class="tseg" data-min="5" style="flex:5"><div class="tm">5</div><div class="tl">Pick + set up</div></div>
       <div class="tseg" data-min="10" style="flex:10"><div class="tm">10<small>MIN</small></div><div class="tl">Let it interview you</div></div>
       <div class="tseg" data-min="15" style="flex:15"><div class="tm">15<small>MIN</small></div><div class="tl">Build the report</div></div>
-      <div class="tseg" data-min="15" style="flex:15"><div class="tm">15<small>MIN</small></div><div class="tl">Compare + fix</div></div>
+      <div class="tseg" data-min="20" style="flex:20"><div class="tm">20<small>MIN</small></div><div class="tl">Compare + fix</div></div>
       <div class="tseg" data-min="10" style="flex:10"><div class="tm">10<small>MIN</small></div><div class="tl">Save as a skill</div></div>
       <div class="tseg" data-min="15" style="flex:15"><div class="tm">15<small>MIN</small></div><div class="tl">Test on new files</div></div>
       <div class="tseg" data-min="5" style="flex:5"><div class="tm">5</div><div class="tl">Prep readout</div></div>
@@ -797,9 +811,9 @@ h2.title em{font-style:normal;color:var(--accent);transition:color .9s;}
   </section>
 
   <!-- ============ 11 BUILD 2 ============ -->
-  <section class="slide" data-ch="11" data-id="break2" data-timer="10">
-    <div class="timerhead"><div><div class="breakbig">Break</div></div><div class="clock" data-clock>10:00</div></div>
-    <div class="tline"><div class="tseg" data-min="10" style="flex:10"><div class="tm">10<small>MIN</small></div><div class="tl">Next: Build 2</div></div></div>
+  <section class="slide" data-ch="11" data-id="break2" data-timer="15">
+    <div class="timerhead"><div><div class="breakbig">Break</div></div><div class="clock" data-clock>15:00</div></div>
+    <div class="tline"><div class="tseg" data-min="15" style="flex:15"><div class="tm">15<small>MIN</small></div><div class="tl">Next: Build 2</div></div></div>
   </section>
 
   <section class="slide" data-ch="11" data-id="build2" data-steps="5">
@@ -816,11 +830,11 @@ h2.title em{font-style:normal;color:var(--accent);transition:color .9s;}
     <div class="buildout"><span class="bt">You leave with</span><span class="bb">A skill that checks new documents the same way every time.</span></div>
   </section>
 
-  <section class="slide" data-ch="11" data-id="time2" data-timer="75">
-    <div class="timerhead"><div><div class="kicker">Build 2 · 75 minutes</div><h2 class="title sm">Automate a <em>document check</em></h2></div><div class="clock" data-clock>75:00</div></div>
+  <section class="slide" data-ch="11" data-id="time2" data-timer="80">
+    <div class="timerhead"><div><div class="kicker">Build 2 · 80 minutes</div><h2 class="title sm">Automate a <em>document check</em></h2></div><div class="clock" data-clock>80:00</div></div>
     <div class="tline">
       <div class="tseg" data-min="5" style="flex:5"><div class="tm">5</div><div class="tl">Pick + set up</div></div>
-      <div class="tseg" data-min="20" style="flex:20"><div class="tm">20<small>MIN</small></div><div class="tl">AI checks the documents</div></div>
+      <div class="tseg" data-min="25" style="flex:25"><div class="tm">25<small>MIN</small></div><div class="tl">AI checks the documents</div></div>
       <div class="tseg" data-min="15" style="flex:15"><div class="tm">15<small>MIN</small></div><div class="tl">Check 3 answers by hand</div></div>
       <div class="tseg" data-min="15" style="flex:15"><div class="tm">15<small>MIN</small></div><div class="tl">Save as a skill</div></div>
       <div class="tseg" data-min="15" style="flex:15"><div class="tm">15<small>MIN</small></div><div class="tl">Test on new documents</div></div>
