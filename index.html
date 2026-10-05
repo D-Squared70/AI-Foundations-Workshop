@@ -381,6 +381,12 @@ h2.title em{font-style:normal;color:var(--accent);transition:color .9s;}
 .buildout .bt{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase;}
 .buildout .bb{font-size:19px;}
 
+/* build 2 paths */
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:38px;max-width:960px;}
+.path{border:1px solid var(--rule-2);border-top:3px solid var(--accent);border-radius:4px 4px 10px 10px;padding:26px 26px 30px;background:var(--bg-soft);}
+.path .pk2{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);}
+.path h4{font-family:var(--display);font-size:46px;font-weight:800;text-transform:uppercase;line-height:.92;margin:10px 0 14px;color:var(--accent);}
+.path p{font-size:20px;color:var(--ink-2);line-height:1.4;}
 /* timer slides */
 .timerhead{display:flex;justify-content:space-between;align-items:flex-end;max-width:960px;}
 .clock{font-family:var(--display);font-size:120px;font-weight:900;line-height:.8;color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:.01em;}
@@ -455,9 +461,9 @@ h2.title em{font-style:normal;color:var(--accent);transition:color .9s;}
     <div class="agenda">
       <div class="ag shown"><div class="an">01</div><h4>Foundations</h4><p>How to get reliable work out of AI.</p><span class="who">Room + remote</span></div>
       <div class="ag brk shown"><div class="an">&nbsp;</div><h4>Break</h4></div>
-      <div class="ag shown"><div class="an">02</div><h4>Build 1</h4><p>Automate a report your team makes on repeat.</p><span class="who">Teams</span></div>
+      <div class="ag shown"><div class="an">02</div><h4>Build 1</h4><p>Build the project your team chose.</p><span class="who">Teams</span></div>
       <div class="ag brk shown"><div class="an">&nbsp;</div><h4>Break</h4></div>
-      <div class="ag shown"><div class="an">03</div><h4>Build 2</h4><p>Automate checking documents against a checklist.</p><span class="who">Teams</span></div>
+      <div class="ag shown"><div class="an">03</div><h4>Build 2</h4><p>Keep going, or start a second project.</p><span class="who">Teams</span></div>
     </div>
   </section>
 
@@ -770,30 +776,30 @@ h2.title em{font-style:normal;color:var(--accent);transition:color .9s;}
     <div class="timerhead"><div><div class="kicker">Before we build · 15 minutes</div><h2 class="title">Get <em>set up.</em></h2></div><div class="clock" data-clock>15:00</div></div>
     <div class="checklist">
       <div class="ci"><span class="box"></span>Logged in to your AI tool</div>
-      <div class="ci"><span class="box"></span><span data-only-el="desktop">Folder created for your report</span><span data-only-el="browser">Project created for your report</span></div>
+      <div class="ci"><span class="box"></span><span data-only-el="desktop">Folder created for your team's project</span><span data-only-el="browser">Project created for your team's work</span></div>
       <div class="ci"><span class="box"></span>Dictation mic works</div>
-      <div class="ci"><span class="box"></span>Files ready: 3 past reports + the raw files behind each</div>
+      <div class="ci"><span class="box"></span>Files ready: 3 past examples, what went in and what came out</div>
     </div>
   </section>
 
   <section class="slide" data-ch="10" data-id="build1" data-steps="5">
     <div class="kicker">Build 1</div>
-    <h2 class="title sm">Automate a report your team <em>makes on repeat.</em></h2>
+    <h2 class="title sm">Build the project <em>your team chose.</em></h2>
     <div class="flow">
-      <div class="fs rev shown" data-i="0"><div class="fn">01</div><b>Pick</b><p>One report you make every week, month or quarter.</p></div>
-      <div class="fs rev" data-i="1"><div class="fn">02</div><b>Gather</b><p>3 past examples. Each one: the raw files and the finished report.</p></div>
-      <div class="fs rev" data-i="2"><div class="fn">03</div><b>Learn</b><p>Give AI example 1. It works out the look, the reasoning and your writing voice.</p></div>
+      <div class="fs rev shown" data-i="0"><div class="fn">01</div><b>Pick</b><p>The task your team wants AI to take on.</p></div>
+      <div class="fs rev" data-i="1"><div class="fn">02</div><b>Gather</b><p>3 past examples. Each one: what went in and what came out.</p></div>
+      <div class="fs rev" data-i="2"><div class="fn">03</div><b>Learn</b><p>Give AI example 1. It works out how you got from one to the other.</p></div>
       <div class="fs rev" data-i="3"><div class="fn">04</div><b>Save</b><p>Turn what it learned into a skill.</p></div>
-      <div class="fs rev" data-i="4"><div class="fn">05</div><b>Test</b><p>New chat. Give the skill only the raw files from example 2.</p></div>
-      <div class="fs rev" data-i="5"><div class="fn">06</div><b>Compare</b><p>Put its report next to yours. Fix the skill. Repeat with example 3.</p></div>
+      <div class="fs rev" data-i="4"><div class="fn">05</div><b>Test</b><p>New chat. Give the skill only what went in for example 2.</p></div>
+      <div class="fs rev" data-i="5"><div class="fn">06</div><b>Compare</b><p>Put its result next to yours. Fix the skill. Repeat with example 3.</p></div>
     </div>
-    <div class="buildout"><span class="bt">You leave with</span><span class="bb">A skill that builds your report from the raw files.</span></div>
+    <div class="buildout"><span class="bt">No past examples?</span><span class="bb">Let AI interview you first. Then build from your answers.</span></div>
   </section>
 
   <section class="slide" data-ch="10" data-id="time1" data-timer="80">
-    <div class="timerhead"><div><div class="kicker">Build 1 · 80 minutes</div><h2 class="title sm">Automate a <em>recurring report</em></h2></div><div class="clock" data-clock>80:00</div></div>
+    <div class="timerhead"><div><div class="kicker">Build 1 · 80 minutes</div><h2 class="title sm">Your team's <em>project</em></h2></div><div class="clock" data-clock>80:00</div></div>
     <div class="tline">
-      <div class="tseg" data-min="5" style="flex:5"><div class="tm">5</div><div class="tl">Pick + set up</div></div>
+      <div class="tseg" data-min="5" style="flex:5"><div class="tm">5</div><div class="tl">Set up</div></div>
       <div class="tseg" data-min="20" style="flex:20"><div class="tm">20<small>MIN</small></div><div class="tl">AI learns from example 1</div></div>
       <div class="tseg" data-min="10" style="flex:10"><div class="tm">10<small>MIN</small></div><div class="tl">Save as a skill</div></div>
       <div class="tseg" data-min="20" style="flex:20"><div class="tm">20<small>MIN</small></div><div class="tl">Test on example 2. Compare + fix.</div></div>
@@ -816,29 +822,24 @@ h2.title em{font-style:normal;color:var(--accent);transition:color .9s;}
     <div class="tline"><div class="tseg" data-min="15" style="flex:15"><div class="tm">15<small>MIN</small></div><div class="tl">Next: Build 2</div></div></div>
   </section>
 
-  <section class="slide" data-ch="11" data-id="build2" data-steps="5">
+  <section class="slide" data-ch="11" data-id="build2" data-steps="1">
     <div class="kicker">Build 2</div>
-    <h2 class="title sm">Automate checking documents <em>against a checklist.</em></h2>
-    <div class="flow">
-      <div class="fs rev shown" data-i="0"><div class="fn">01</div><b>Pick</b><p>Documents you check against a standard. Invoices, proposals, submissions.</p></div>
-      <div class="fs rev" data-i="1"><div class="fn">02</div><b>Gather</b><p>A few documents and your checklist. No checklist? AI interviews you to write one.</p></div>
-      <div class="fs rev" data-i="2"><div class="fn">03</div><b>Check</b><p>Give it a document it hasn't seen. Review what it finds.</p></div>
-      <div class="fs rev" data-i="3"><div class="fn">04</div><b>Save</b><p>Happy with the result? Turn it into a skill.</p></div>
-      <div class="fs rev" data-i="4"><div class="fn">05</div><b>Test</b><p>New chat, new document. Do this 2 to 3 times.</p></div>
-      <div class="fs rev" data-i="5"><div class="fn">06</div><b>Improve</b><p>Give feedback. Update the skill. Test again.</p></div>
+    <h2 class="title sm">Keep going, <em>or start a second project.</em></h2>
+    <div class="paths">
+      <div class="path rev shown" data-i="0"><div class="pk2">Option A</div><h4>One big project</h4><p>Pick up where you stopped. Test it on more examples and push it further.</p></div>
+      <div class="path rev" data-i="1"><div class="pk2">Option B</div><h4>A second project</h4><p>Start a new one. Same six steps: pick, gather, learn, save, test, compare.</p></div>
     </div>
-    <div class="buildout"><span class="bt">You leave with</span><span class="bb">A skill that checks new documents the same way every time.</span></div>
+    <div class="buildout"><span class="bt">You leave with</span><span class="bb">A tested skill, and a list of what to improve next.</span></div>
   </section>
 
   <section class="slide" data-ch="11" data-id="time2" data-timer="80">
-    <div class="timerhead"><div><div class="kicker">Build 2 · 80 minutes</div><h2 class="title sm">Automate a <em>document check</em></h2></div><div class="clock" data-clock>80:00</div></div>
+    <div class="timerhead"><div><div class="kicker">Build 2 · 80 minutes</div><h2 class="title sm">Keep going, or <em>project two</em></h2></div><div class="clock" data-clock>80:00</div></div>
     <div class="tline">
-      <div class="tseg" data-min="5" style="flex:5"><div class="tm">5</div><div class="tl">Pick + set up</div></div>
-      <div class="tseg" data-min="15" style="flex:15"><div class="tm">15<small>MIN</small></div><div class="tl">Get the checklist ready</div></div>
-      <div class="tseg" data-min="15" style="flex:15"><div class="tm">15<small>MIN</small></div><div class="tl">Check a new document</div></div>
-      <div class="tseg" data-min="10" style="flex:10"><div class="tm">10<small>MIN</small></div><div class="tl">Save as a skill</div></div>
-      <div class="tseg" data-min="30" style="flex:30"><div class="tm">30<small>MIN</small></div><div class="tl">Test 2 to 3 times in new chats. Fix the skill.</div></div>
-      <div class="tseg" data-min="5" style="flex:5"><div class="tm">5</div><div class="tl">Prep readout</div></div>
+      <div class="tseg" data-min="5" style="flex:5"><div class="tm">5</div><div class="tl">Set up</div></div>
+      <div class="tseg" data-min="25" style="flex:25"><div class="tm">25<small>MIN</small></div><div class="tl">Build: learn and save, or keep improving</div></div>
+      <div class="tseg" data-min="20" style="flex:20"><div class="tm">20<small>MIN</small></div><div class="tl">Test on a new example. Compare + fix.</div></div>
+      <div class="tseg" data-min="20" style="flex:20"><div class="tm">20<small>MIN</small></div><div class="tl">Test again. Compare + fix.</div></div>
+      <div class="tseg" data-min="10" style="flex:10"><div class="tm">10<small>MIN</small></div><div class="tl">List what's left. Prep readout.</div></div>
     </div>
   </section>
 
@@ -868,7 +869,7 @@ const ACCENTS={
   11:['#D9C38A','217,195,138']  // Build 2
 };
 const CH_NAMES={1:'Start',2:'Asking Well',3:'Model + Effort',4:'Accurate Answers',5:'Chat vs. Agents',
-  6:'One Home per Job',7:'Skills',8:'Connect + Schedule',9:'Recap + Q&A',10:'Build 1 · Reports',11:'Build 2 · Checks'};
+  6:'One Home per Job',7:'Skills',8:'Connect + Schedule',9:'Recap + Q&A',10:'Build 1',11:'Build 2'};
 const CH_NAMES_BROWSER={8:'Connectors'};
 const PHASE_AT={2:'FOUNDATIONS',10:'BUILD'};
 const CH_COUNT=11;
